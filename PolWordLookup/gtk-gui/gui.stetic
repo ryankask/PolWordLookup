@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/PolWordLookup.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="248 132">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Polish Word Lookup</property>
+    <property name="Icon">stock:gtk-find Menu</property>
+    <property name="WindowPosition">Mouse</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.Label" id="titleLbl">
+            <property name="MemberName" />
+            <property name="Xpad">6</property>
+            <property name="Ypad">6</property>
+            <property name="LabelProp" translatable="yes">Look up a word to find its meaning.</property>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="inputHBox">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Label" id="wordLbl">
+                <property name="MemberName" />
+                <property name="Xpad">6</property>
+                <property name="LabelProp" translatable="yes">Word:</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Alignment" id="wordEntryAlignment">
+                <property name="MemberName" />
+                <property name="RightPadding">6</property>
+                <child>
+                  <widget class="Gtk.Entry" id="wordEntry">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Alignment" id="lookupBtnAlignment">
+            <property name="MemberName" />
+            <property name="Xscale">0</property>
+            <property name="Xalign">1</property>
+            <property name="Yalign">0</property>
+            <property name="RightPadding">6</property>
+            <property name="BottomPadding">6</property>
+            <child>
+              <widget class="Gtk.Button" id="lookupBtn">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Lookup</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnLookupBtnClicked" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="PolWordLookup.ResultWindow" design-size="400 151">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Your Results</property>
+    <property name="WindowPosition">CenterAlways</property>
+    <property name="Gravity">Center</property>
+    <child>
+      <widget class="Gtk.VBox" id="mainVBox">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.HBox" id="wordHBox">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Label" id="resultTitleLbl">
+                <property name="MemberName" />
+                <property name="Xpad">6</property>
+                <property name="Ypad">6</property>
+                <property name="LabelProp" translatable="yes">Result for word:</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="resultForWordLbl">
+                <property name="MemberName" />
+                <property name="Xpad">6</property>
+                <property name="Ypad">6</property>
+                <property name="LabelProp" translatable="yes">(unknown)</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Alignment" id="mainTextAlignment">
+            <property name="MemberName" />
+            <property name="LeftPadding">6</property>
+            <property name="RightPadding">6</property>
+            <property name="BottomPadding">6</property>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.TextView" id="definitionTxt">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                    <property name="Text" translatable="yes" />
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

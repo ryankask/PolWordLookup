@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolWordLookup", "PolWordLookup\PolWordLookup.csproj", "{70393BC3-3BA4-404C-AD1A-A0C49B6B80F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70393BC3-3BA4-404C-AD1A-A0C49B6B80F6}.Debug|x86.ActiveCfg = Debug|x86
+		{70393BC3-3BA4-404C-AD1A-A0C49B6B80F6}.Debug|x86.Build.0 = Debug|x86
+		{70393BC3-3BA4-404C-AD1A-A0C49B6B80F6}.Release|x86.ActiveCfg = Release|x86
+		{70393BC3-3BA4-404C-AD1A-A0C49B6B80F6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PolWordLookup\PolWordLookup.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 120
+		$1.RemoveTrailingWhitespace = True
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.BeforeMethodDeclarationParentheses = False
+		$2.BeforeMethodCallParentheses = False
+		$2.BeforeConstructorDeclarationParentheses = False
+		$2.BeforeIndexerDeclarationBracket = False
+		$2.BeforeDelegateDeclarationParentheses = False
+		$2.NewParentheses = False
+		$2.SpacesBeforeBrackets = False
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal

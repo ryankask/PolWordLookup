@@ -1,0 +1,6 @@
+PolWordLookup/bin
+*.userprefs
+*.usertasks
+*.pidb
+*.resources
+test-results/

@@ -1,0 +1,3 @@
+[Dictionary]
+url = http://example.com/define/word/{0}/
+xpath-expression = //div[@id='definition']
