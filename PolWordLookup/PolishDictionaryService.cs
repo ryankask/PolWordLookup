@@ -81,7 +81,7 @@ namespace PolWordLookup
                 return "Not found.";
             }
 
-            return definitionNode.InnerHtml;
+            return definitionNode.InnerText;
         }
     }
 }

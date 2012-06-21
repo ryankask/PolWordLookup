@@ -69,6 +69,7 @@ namespace PolWordLookup
 			this.definitionTxt = new global::Gtk.TextView ();
 			this.definitionTxt.CanFocus = true;
 			this.definitionTxt.Name = "definitionTxt";
+			this.definitionTxt.WrapMode = ((global::Gtk.WrapMode)(2));
 			this.GtkScrolledWindow.Add (this.definitionTxt);
 			this.mainTextAlignment.Add (this.GtkScrolledWindow);
 			this.mainVBox.Add (this.mainTextAlignment);
